@@ -1,0 +1,72 @@
+"OPEN 6.3.4"
+"Mon Jul 10 2017 14:22:08"
+<open><version>"6.3.4"</version></open>
+<open><configfile>"/User/Configs/UserPrefs/2x3 LED.xml"</configfile></open>
+<open><light><source>"6400-02 or -02B LED Source"</source><par_in>1<sensor>"SI-2933"<cal>-0.85<actinity>1.00</actinity><transm>1.00</transm></cal></sensor><transm>1</transm></par_in><par_out>1<sensor>"Q43677"<cal>7.47</cal></sensor></par_out></light></open>
+<open><comps><file>"/User/Configs/Comps/StdComps_6.3"<header>""</header><extras><extras[1]><pi><id>1000</id><label>"WUE"</label><desc>"water use effeciency"</desc><type>1</type><strscrlen>8</strscrlen><fmt1>1</fmt1><digs>2</digs><initsval>""</initsval><initdval>0</initdval><pick>0</pick><pickFile>""</pickFile></pi><varname>"u1000"</varname><code>"u1000 =u30/u20/10000"</code><when>1</when><commitem>1</commitem></extras[1]></extras></file><energybal>no<f_parIn>1</f_parIn><f_parOut>0</f_parOut><alphaK>0.16</alphaK></energybal><bc_total>2.840<stomatal_ratio>1</stomatal_ratio><bc_oneside>1.420<type>2</type><table>"/Sys/Lib/StdBLCTable"</table><area>6</area><slope>-0.219565</slope><offset>2.73739</offset><fan>5</fan></bc_oneside></bc_total></comps></open>
+<open><prompts><onlog>on</onlog><items>"Default (none)"<items[1]><id>-101</id><label>"species"</label><desc>"two species"</desc><type>1</type><strscrlen>1</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>"rose"</initsval><initdval>77</initdval><pick>1</pick><pickFile>"/User/Configs/myPickList6.1.16"</pickFile></items[1]><items[2]><id>-102</id><label>"leaf"</label><desc>"leaf number"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>1</fmt1><digs>2</digs><initsval>""</initsval><initdval>1</initdval><pick>1</pick><pickFile>"/User/Configs/myPickList"</pickFile></items[2]></items></prompts></open>
+<open><constants><oxygen>21 %</oxygen><bb_vapor>1.5</bb_vapor><bb_oxy>0.9</bb_oxy></constants></open>
+<open><stability><items>"Std Stability"<items[1]><id>-2</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[1]><items[2]><id>-5</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[2]><items[3]><id>-7</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[3]></items></stability></open>
+<open><log><format>"StdLogFmt_6.3"<items>{ -35 -21 -101 -102 1000 -36 -76 30 23 36 21 25 221 -33 111 -34 11 -9 -10 -8 -1 -2 -4 -5 -14 -15 -7 -12 -13 -11 -65 -66 -117 -119 -116 -118 -72 -18 -19 -77 -78 -79 -23  }<hdr>{  }</hdr></items></format><options><beep>on</beep><match>"never"<time>30</time><co2>100</co2><delta>10</delta></match><hdr>normal</hdr><rem>normal</rem><stab>no</stab><stats>no<mean>no</mean><file>no</file><period>15</period></stats><excel>yes</excel><controls>yes</controls><comm>no</comm></options><datafile>"/User/07102017psc2928_co2response"</datafile><button><action>"Normal Log"<code>" LogOneObsManual "</code></action></button><autoprog>"/User/Configs/AutoProgs/A-CiCurve2"<active>no</active></autoprog></log></open>
+<open><a2d><avgtime>4.0 secs</avgtime><userchans><ch20>"Off"</ch20><ch21>"Off"</ch21><ch22>"Off"</ch22><ch23>"Off"</ch23></userchans></a2d></open>
+<open><matching><type>0</type><disp>'a'</disp><settings>><CO2Limit>10.0</CO2Limit><H2OLimit>1.0</H2OLimit><MaxAutoTime>60</MaxAutoTime><AverageTime>10</AverageTime></settings></matching></open>
+<li6400><factory><unit>"PSC-2928"</unit><serviced>"12 May 2016"</serviced><fuseaware>0</fuseaware><co2mixer>yes</co2mixer><co2><coeffs>{ 0 0.201214 4.46893e-05 5.59598e-09 9.1999e-13 -8.71919e-17  }</coeffs><dvdt>-3.2</dvdt><xs>{ 0.000644 -0.000562  }</xs></co2><h2o><coeffs>{ 0 0.00569302 2.25099e-06 -9.16403e-12  }</coeffs><dvdt>-1.2</dvdt><xs>{ -0.00114 -0.000247  }</xs></h2o><flow>{ 0 0.3697  }</flow><press>{ 87.481 0.00551  }</press></factory></li6400>
+<li6400><user><flow_zero>271.5</flow_zero><irga_zero><co2>154.5 37.5<at>26.5091</at></co2><h2o>-1.5 -40.6<at>29.3636</at></h2o></irga_zero><irga_span><co2>{ 0.989287 0.99172  }</co2><h2o>{ 0.997662 0.993841  }</h2o></irga_span><irga_match><co2>{ -0.250383 -2.35623  }</co2><h2o>{ -0.0171511 -0.197978  }</h2o></irga_match><co2_mixer><pump_mv>4500</pump_mv><ppm>{ 2308.34 1086.82 431.366 262.721 120.001 70.077 46.6397 41.4624  }</ppm><mv>{ 5000 3000 1500 1000 500 300 200 100  }</mv></co2_mixer><parin_offset>-0.157245</parin_offset><led_cal><unit>"SI-1352"</unit><mv>{ 10 25 50 100 1000 2000 3000 4000 5000  }</mv><qntm>{ 4.81624 13.7615 30.7125 67.5304 773.834 1514.43 2215.91 2893.35 3541.58  }</qntm></led_cal><lcf_cal><unit>"LCF-1899"</unit><red><mv>{ 50 100 200 400 800 1500  }</mv><qntm>{ 78.6177 167.555 357.089 751.907 1561.71 2975.65  }</qntm></red><blue><mv>{ 100 500 1000 2000 3000 4000 5000  }</mv><qntm>{ 9.50495 42.6027 79.0334 138.481 191.415 237.964 276.534  }</qntm></blue></lcf_cal></user></li6400>
+"14:22:15 "
+$STARTOFDATA$
+"Obs"	"HHMMSS"	"species"	"leaf"	"WUE"	"FTime"	"EBal?"	"Photo"	"Cond"	"Ci"	"Trmmol"	"VpdL"	"CTleaf"	"Area"	"BLC_1"	"StmRat"	"BLCond"	"Tair"	"Tleaf"	"TBlk"	"CO2R"	"CO2S"	"H2OR"	"H2OS"	"RH_R"	"RH_S"	"Flow"	"PARi"	"PARo"	"Press"	"CsMch"	"HsMch"	"CsMchSD"	"HsMchSD"	"CrMchSD"	"HrMchSD"	"StableF"	"BLCslope"	"BLCoffst"	"f_parin"	"f_parout"	"alphaK"	"Status"
+"14:22:15 Launched AutoProg /User/Configs/AutoProgs/A-CiCurve2"
+"14:27:39 Stability: (CO2S 15s SLP<1)(H2OS 15s SLP<1)(Flow 15s SLP<1)"
+1	"14:29:41"	"rose"	1.00	0.19	495.5	0	8.28	0.241	318	4.4	1.38	25.73	6	1.42	1	2.84	23.76	25.73	23.58	400.05	388.08	21.801	26.932	53.33	65.88	500.5	1081	48	72.22	-2.17	-0.392	0.0292	0.00453	0.0327	0.00442	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:31:14 Stability: (CO2S 30s SLP<0.3)(CO2R 30s SLP<0.3)(H2OS 30s SLP<0.3)"
+"14:32:24 Flow: Fixed -> 500 umol/s"
+2	"14:32:03"	"rose"	1.00	0.13	637.5	0	5.91	0.251	242	4.61	1.39	25.84	6	1.42	1	2.84	23.69	25.84	23.44	300.04	291.34	21.666	27.042	53.23	66.44	500.5	1081	43	72.22	-1.71	-0.388	0.0646	0.00309	0.028	0.00356	0.3	-0.22	2.74	1.00	0.00	0.16	111115
+"14:32:24 CO2 Mixer: CO2R -> 200 uml"
+"14:34:46 Flow: Fixed -> 500 umol/s"
+3	"14:34:25"	"rose"	1.00	0.07	779.5	0	3.33	0.258	167	4.76	1.4	25.90	6	1.42	1	2.84	23.60	25.90	23.32	199.94	194.83	21.512	27.061	53.14	66.84	500.5	1082	45	72.21	-1.47	-0.383	0.0268	0.00205	0.0273	0.00247	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:34:46 CO2 Mixer: CO2R -> 100 uml"
+"14:37:07 Flow: Fixed -> 500 umol/s"
+4	"14:36:47"	"rose"	1.00	0.01	921.5	0	0.576	0.268	91.8	4.93	1.4	25.91	6	1.42	1	2.84	23.56	25.91	23.27	99.81	98.53	21.339	27.086	52.84	67.07	500.4	1081	41	72.21	-1.52	-0.38	0.0186	0.00241	0.00849	0.00193	1.0	-0.22	2.74	1.00	0.00	0.16	111115
+"14:37:08 CO2 Mixer: CO2R -> 75 uml"
+"14:39:30 Flow: Fixed -> 500 umol/s"
+5	"14:39:09"	"rose"	1.00	-0.00	1063.5	0	-0.0645	0.282	72.6	5.05	1.37	25.76	6	1.42	1	2.84	23.47	25.76	23.16	74.85	74.48	21.177	27.069	52.72	67.39	500.5	1081	47	72.21	-1.55	-0.38	0.0208	0.0038	0.0165	0.0021	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:39:30 CO2 Mixer: CO2R -> 50 uml"
+"14:41:52 Flow: Fixed -> 500 umol/s"
+6	"14:41:31"	"rose"	1.00	-0.01	1205.5	0	-0.616	0.295	52.5	5.17	1.35	25.65	6	1.42	1	2.84	23.38	25.65	23.08	49.98	50.41	21.043	27.079	52.67	67.77	500.5	1082	47	72.21	-1.62	-0.382	0.0224	0.00474	0.016	0.00357	1.0	-0.22	2.74	1.00	0.00	0.16	111115
+"14:41:52 CO2 Mixer -> OFF"
+"14:44:13 Flow: Fixed -> 500 umol/s"
+7	"14:43:53"	"rose"	1.00	-0.03	1347.5	0	-1.67	0.306	11.8	5.33	1.34	25.65	6	1.42	1	2.84	23.35	25.65	23.04	0.43	2.42	20.932	27.146	52.48	68.06	500.4	1081	47	72.21	-2.05	-0.385	0.0146	0.00614	0.0156	0.00436	0.7	-0.22	2.74	1.00	0.00	0.16	111105
+"14:44:14 CO2 Mixer: CO2R -> 400 uml"
+"14:49:16 Flow: Fixed -> 500 umol/s"
+8	"14:48:55"	"rose"	1.00	0.14	1649.5	0	7.49	0.309	335	5.39	1.35	25.59	6	1.42	1	2.84	23.22	25.59	22.90	400.03	388.53	20.688	26.975	52.28	68.17	500.4	1081	36	72.21	-2.23	-0.37	0.0366	0.00763	0.0266	0.00558	1.0	-0.22	2.74	1.00	0.00	0.16	111115
+"14:49:16 CO2 Mixer: CO2R -> 400 uml"
+"14:51:37 Flow: Fixed -> 500 umol/s"
+9	"14:51:17"	"rose"	1.00	0.15	1791.5	0	7.68	0.302	333	5.29	1.35	25.53	6	1.42	1	2.84	23.13	25.53	22.80	400.09	388.42	20.554	26.729	52.24	67.93	500.4	1081	31	72.22	-2.19	-0.36	0.0287	0.00986	0.058	0.00749	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:51:38 CO2 Mixer: CO2R -> 500 uml"
+"14:54:00 Flow: Fixed -> 500 umol/s"
+10	"14:53:39"	"rose"	1.00	0.19	1933.5	0	9.55	0.285	414	5.03	1.35	25.37	6	1.42	1	2.84	22.95	25.37	22.64	500.04	485.67	20.400	26.274	52.41	67.50	500.4	1081	34	72.22	-2.43	-0.347	0.0271	0.0122	0.027	0.0108	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:54:00 CO2 Mixer: CO2R -> 600 uml"
+"14:56:22 Flow: Fixed -> 500 umol/s"
+11	"14:56:01"	"rose"	1.00	0.23	2075.5	0	10.7	0.264	497	4.74	1.36	25.25	6	1.42	1	2.84	22.78	25.25	22.47	599.84	583.74	20.269	25.801	52.61	66.96	500.5	1081	37	72.21	-2.59	-0.325	0.0492	0.0167	0.047	0.0128	0.3	-0.22	2.74	1.00	0.00	0.16	111115
+"14:56:22 CO2 Mixer: CO2R -> 700 uml"
+"14:58:43 Flow: Fixed -> 500 umol/s"
+12	"14:58:23"	"rose"	1.00	0.28	2217.5	0	12	0.235	575	4.33	1.39	25.17	6	1.42	1	2.84	22.65	25.17	22.31	699.88	681.96	20.128	25.189	52.65	65.89	500.4	1081	43	72.21	-3.27	-0.307	0.0508	0.0135	0.111	0.0127	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"14:58:44 CO2 Mixer: CO2R -> 800 uml"
+"15:01:06 Flow: Fixed -> 500 umol/s"
+13	"15:00:45"	"rose"	1.00	0.33	2359.5	0	12.9	0.198	647	3.9	1.47	25.31	6	1.42	1	2.84	22.65	25.31	22.31	799.98	780.92	19.979	24.538	52.25	64.17	500.5	1081	45	72.21	-4.1	-0.299	0.0328	0.0137	0.0294	0.00899	0.7	-0.22	2.74	1.00	0.00	0.16	111115
+"15:01:06 CO2 Mixer: CO2R -> 1000 uml"
+"15:03:28 Flow: Fixed -> 500 umol/s"
+14	"15:03:07"	"rose"	1.00	0.41	2501.5	0	14.1	0.165	804	3.42	1.53	25.38	6	1.42	1	2.84	22.63	25.38	22.29	999.84	978.88	19.834	23.839	51.93	62.42	500.4	1081	37	72.21	-5.39	-0.281	0.0623	0.0146	0.0808	0.0169	0.0	-0.22	2.74	1.00	0.00	0.16	111115
+"15:03:28 CO2 Mixer: CO2R -> 1200 uml"
+"15:05:50 Flow: Fixed -> 500 umol/s"
+15	"15:05:29"	"rose"	1.00	0.51	2643.5	0	15.3	0.135	951	2.97	1.6	25.49	6	1.42	1	2.84	22.61	25.49	22.26	1200.14	1177.62	19.702	23.181	51.66	60.79	499.6	1081	32	72.21	-7.01	-0.267	0.0961	0.011	0.0957	0.0117	0.3	-0.22	2.74	1.00	0.00	0.16	111115
+"15:05:50 CO2 Mixer: CO2R -> 1500 uml"
+"15:08:12 Flow: Fixed -> 500 umol/s"
+16	"15:07:51"	"rose"	1.00	0.62	2785.5	0	16.2	0.113	1.19E+03	2.59	1.66	25.60	6	1.42	1	2.84	22.65	25.60	22.29	1497.96	1473.94	19.562	22.605	51.17	59.13	499.6	1080	27	72.21	-9.7	-0.246	0.113	0.0109	0.03	0.0118	0.3	-0.22	2.74	1.00	0.00	0.16	111115
+"15:08:12 CO2 Mixer: CO2R -> 2000 uml"
+"15:10:34 Flow: Fixed -> 500 umol/s"
+17	"15:10:13"	"rose"	1.00	0.96	2927.5	0	21.6	0.0959	1.53E+03	2.25	1.7	25.57	6	1.42	1	2.84	22.64	25.57	22.28	2001.76	1970.47	19.408	22.055	50.80	57.73	499.6	1080	22	72.21	-15.7	-0.243	0.0795	0.00962	0.155	0.00923	0.3	-0.22	2.74	1.00	0.00	0.16	111115
+"15:10:34 Lamp: ParIn ->  1500 uml"
+"15:10:34 CO2 Mixer: CO2R -> 2000 uml"
+"15:10:34 Coolers: Off"
+"15:10:34 Flow: Fixed -> 500 umol/s"
